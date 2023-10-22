@@ -46,7 +46,8 @@ const Skills = () => {
             </motion.div>
           ))}
         </motion.div>
-        {experience.length!==0 && <div className="app__skills-exp">
+        {experience.length!==0 && (
+         <div className="app__skills-exp">
           {experiences.map((experience) => (
             <motion.div
               className="app__skills-exp-item"
@@ -83,7 +84,7 @@ const Skills = () => {
             </motion.div>
           ))}
         </div>
-        }
+        )}
       </div>
     </>
   );
